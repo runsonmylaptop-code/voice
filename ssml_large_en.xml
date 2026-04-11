@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<speak version='1.0'
+       xmlns='http://www.w3.org/2001/10/synthesis'
+       xmlns:mstts='http://www.w3.org/2001/mstts'
+       xml:lang='en-US'>
+
+    
+
+    <voice name='en-US-JennyNeural'>
+
+        <!-- ============================================
+             PODSTAWOWE PAUZY
+             time: ms (milisekundy) lub s (sekundy)
+             strength: none / x-weak / weak / medium / strong / x-strong
+        ============================================ -->
+
+        Welcome to the Azure Speech synthesis demonstration.
+        <break time='700ms'/>
+        We will show you various features of the SSML language.
+        <break strength='strong'/>
+
+
+        <!-- ============================================
+             PROSODY – kontrola tempa, tonu i głośności
+             rate:   x-slow / slow / medium / fast / x-fast  lub  0.5 – 2.0
+             pitch:  x-low / low / medium / high / x-high    lub  -50Hz – +50Hz
+             volume: silent / x-soft / soft / medium / loud / x-loud  lub  0 – 100
+        ============================================ -->
+
+        <prosody rate='slow' pitch='low' volume='soft'>
+            This sentence is spoken slowly, with a low pitch and soft volume.
+        </prosody>
+        <break time='400ms'/>
+
+        <prosody rate='x-fast' pitch='high' volume='loud'>
+            And this one is fast, high-pitched and loud!
+        </prosody>
+        <break time='400ms'/>
+
+        <prosody rate='0.9' pitch='+5Hz'>
+            You can also use numeric values instead of keywords.
+        </prosody>
+        <break time='600ms'/>
+
+
+        <!-- ============================================
+             EMPHASIS – podkreślenie słowa lub frazy
+             level: strong / moderate / reduced
+        ============================================ -->
+
+        The most important word in this sentence is
+        <emphasis level='strong'>artificial intelligence.</emphasis>
+        <break time='300ms'/>
+
+        This word is
+        <emphasis level='moderate'>moderately</emphasis>
+        emphasized.
+        <break time='300ms'/>
+
+        And this word is
+        <emphasis level='reduced'>softened</emphasis>
+        compared to the rest.
+        <break time='600ms'/>
+
+
+        <!-- ============================================
+             SAY-AS – interpretacja specjalnych typów tekstu
+             interpret-as: characters / date / time / telephone /
+                           currency / ordinal / cardinal / fraction
+             format (dla date): dmy / mdy / ymd i inne
+        ============================================ -->
+
+        Today is
+        <say-as interpret-as='date' format='mdy'>03-27-2026</say-as>.
+        <break time='300ms'/>
+
+        The meeting is at
+        <say-as interpret-as='time' format='hms12'>2:30pm</say-as>.
+        <break time='300ms'/>
+
+        Please call
+        <say-as interpret-as='telephone'>+1-800-555-0199</say-as>.
+        <break time='300ms'/>
+
+        The product costs
+        <say-as interpret-as='currency'>$99.99</say-as>.
+        <break time='300ms'/>
+
+        I will read each letter separately:
+        <say-as interpret-as='characters'>SSML</say-as>.
+        <break time='300ms'/>
+
+        She finished in
+        <say-as interpret-as='ordinal'>3</say-as>
+        place in the competition.
+        <break time='600ms'/>
+
+
+        <!-- ============================================
+             SUB – zastępowanie tekstu przy czytaniu
+             alias: tekst który zostanie przeczytany zamiast oryginału
+             Przydatne dla skrótów, akronimów, symboli
+        ============================================ -->
+
+        I work with
+        <sub alias='artificial intelligence'>AI</sub>
+        and
+        <sub alias='natural language processing'>NLP</sub>
+        every day.
+        <break time='300ms'/>
+
+        The temperature is 98
+        <sub alias='degrees Fahrenheit'>°F</sub>.
+        <break time='600ms'/>
+
+
+        <!-- ============================================
+             MSTTS:EXPRESS-AS – style emocjonalne (tylko Microsoft)
+             style: friendly / cheerful / sad / angry / fearful /
+                    newscast / customerservice / whispering /
+                    shouting / hopeful
+             styledegree: natężenie stylu, wartość 0.01 – 2.0 (domyślnie 1.0)
+
+             UWAGA: nie każdy głos obsługuje wszystkie style.
+             Sprawdź dostępność na: https://aka.ms/speechstudiovoices
+        ============================================ -->
+
+        <mstts:express-as style='cheerful' styledegree='1.5'>
+            I am so excited about this demonstration!
+        </mstts:express-as>
+        <break time='400ms'/>
+
+        <mstts:express-as style='sad' styledegree='1.0'>
+            Unfortunately, not all features are available for every voice.
+        </mstts:express-as>
+        <break time='400ms'/>
+
+        <mstts:express-as style='whispering'>
+            Now I am whispering, as if it were a secret.
+        </mstts:express-as>
+        <break time='400ms'/>
+
+        <mstts:express-as style='newscast'>
+            According to the latest reports, speech synthesis is achieving better and better results.
+        </mstts:express-as>
+        <break time='600ms'/>
+
+
+        <!-- ============================================
+             MSTTS:SILENCE – cisza przed lub po wypowiedzi
+             type: Leading (przed) / Tailing (po) / LeadingAndTrailing (oba)
+             value: czas w milisekundach
+        ============================================ -->
+
+        <mstts:silence type='Leading' value='500ms'/>
+        This sentence is preceded by silence at the beginning.
+        <mstts:silence type='Tailing' value='500ms'/>
+        <break time='300ms'/>
+
+
+        <!-- ============================================
+             LANG – zmiana języka w trakcie wypowiedzi
+             Przydatne gdy tekst zawiera słowa w innych językach
+        ============================================ -->
+
+        In English we say hello, in Spanish
+        <lang xml:lang='es-ES'>hola</lang>,
+        and in French
+        <lang xml:lang='fr-FR'>bonjour</lang>.
+        <break time='600ms'/>
+
+
+        <!-- ============================================
+             PHONEME – wymowa fonetyczna
+             alphabet: ipa (International Phonetic Alphabet)
+             ph: zapis fonetyczny słowa
+             Przydatne dla trudnych nazw własnych i słów technicznych
+        ============================================ -->
+
+        The company name
+        <phoneme alphabet='ipa' ph='ˈɡuːɡəl'>Google</phoneme>
+        is pronounced the same way around the world.
+        <break time='600ms'/>
+
+
+        <!-- ============================================
+             PODSUMOWANIE
+        ============================================ -->
+
+        <prosody rate='slow'>
+            <mstts:express-as style='friendly'>
+                That was an overview of the most important SSML tags.
+                <break time='300ms'/>
+                Thank you for your attention!
+            </mstts:express-as>
+        </prosody>
+
+    </voice>
+
+</speak>

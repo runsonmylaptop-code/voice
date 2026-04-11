@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<speak version='1.0'
+       xmlns='http://www.w3.org/2001/10/synthesis'
+       xmlns:mstts='http://www.w3.org/2001/mstts'
+       xml:lang='pl-PL'>
+
+    <voice name="pl-PL-ZofiaNeural">
+        <express-as style="customerservice">
+            Dzień dobry, tu dział obsługi klienta. W czym mogę pomóc?
+        </express-as>
+    </voice>
+
+   
+
+    <voice name="pl-PL-MarekNeural">
+        <prosody rate="fast" pitch="+2%">
+            Dzień dobry. Szczerze mówiąc jestem już trochę zirytowany,
+            bo moje zamówienie miało być wczoraj, a nadal go nie ma.
+        </prosody>
+    </voice>
+
+   
+
+    <voice name="pl-PL-ZofiaNeural">
+        <express-as style="empathetic">
+            Bardzo przepraszam za tę sytuację. Już sprawdzam, co się dzieje.
+            Czy mogę prosić o numer zamówienia?
+        </express-as>
+    </voice>
+
+
+
+    <voice name="pl-PL-MarekNeural">
+        <prosody rate="medium" pitch="+1%">
+            Tak... numer to 12345.
+        </prosody>
+    </voice>
+
+   
+
+    <voice name="pl-PL-ZofiaNeural">
+        <express-as style="customerservice">
+            Dziękuję. Widzę, że przesyłka została opóźniona przez kuriera,
+            ale jest już w doręczeniu i powinna dotrzeć jutro.
+        </express-as>
+    </voice>
+
+
+
+    <voice name="pl-PL-MarekNeural">
+        <prosody rate="fast" pitch="+3%">
+            No dobrze... ale to już drugi raz taka sytuacja.
+            Trochę to niepokojące.
+        </prosody>
+    </voice>
+
+
+
+    <voice name="pl-PL-ZofiaNeural">
+        <express-as style="empathetic">
+            Rozumiem Pana frustrację i naprawdę przepraszam.
+            Mogę ustawić dla Pana powiadomienia SMS oraz dodać priorytet
+            dla tej dostawy.
+        </express-as>
+    </voice>
+
+
+
+    <voice name="pl-PL-MarekNeural">
+        <prosody rate="medium">
+            Dobrze, to byłoby pomocne.
+        </prosody>
+    </voice>
+
+
+
+    <voice name="pl-PL-ZofiaNeural">
+        <express-as style="friendly">
+            Gotowe. Czy mogę jeszcze w czymś pomóc?
+        </express-as>
+    </voice>
+
+   
+
+    <voice name="pl-PL-MarekNeural">
+        <prosody rate="slow">
+            Nie, to wszystko. Dziękuję.
+        </prosody>
+    </voice>
+
+
+
+    <voice name="pl-PL-ZofiaNeural">
+        <express-as style="cheerful">
+            Dziękuję za kontakt i życzę spokojnego dnia!
+        </express-as>
+    </voice> 
+
+</speak>

@@ -1,0 +1,18 @@
+<speak version= '1.0' xmlns='http://www.w3.org/2001/10/synthesis' xmlns:mstts='http://www.w3.org/2001/mstts' xml:lang='pl-PL'>
+    <mstts:backgroundaudio
+            src='https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3'
+            volume='0.3'
+            fadein='2000'
+            fadeout='3000'/>
+
+    <voice name='pl-PL-ZofiaNeural'>
+    Dzień dobry, tu 
+        <!-- <break time='500ms'/>
+        <prosody rate='slow' pitch='low'>
+            Teraz mówię wolniej i niższym głosem.
+        </prosody> -->
+    </voice>
+    <voice name='en-GB-AdaMultilingualNeural'>
+     Azure Text to Speech
+    </voice>
+</speak>
