@@ -100,7 +100,7 @@ recognizer.canceled.connect(on_canceled)
 # podpina on_stopped - odpala się gdy sesja zostanie zakończona
 recognizer.session_stopped.connect(on_stopped)
 
-print("Mów do mikrofonu... (Ctrl+C żeby skończyć)\n")
+print("Mów do mikrofonu... ('koniec' aby zkończyć")
 
 # uruchamia ciągłe rozpoznawanie mowy w wątku w tle - nie blokuje głównego wątku
 recognizer.start_continuous_recognition()
