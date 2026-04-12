@@ -39,8 +39,6 @@ def on_recognized(evt):
 
 def on_recognizing(evt):
     # Wynik częściowy - odpala się wielokrotnie PODCZAS mówienia, tekst się zmienia.
-    # Tu używamy go do wykrywania słowa kluczowego ZANIM użytkownik skończy zdanie -
-    # reakcja jest szybsza niż czekanie na on_recognized
     print(f"Rozpoznaję: {evt.result.text}")
 
 def on_cancel(evt):
